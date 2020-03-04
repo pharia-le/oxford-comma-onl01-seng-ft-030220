@@ -17,5 +17,3 @@ def oxford_comma(array)
   
   new_arr.join
 end
-
-['a', 'b', 'c', 'd']  -- > "a, b, c and d"
