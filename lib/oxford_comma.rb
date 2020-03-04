@@ -8,6 +8,8 @@ def oxford_comma(array)
   array.each_with_index do |ele, i|
     if (array.length-1) == i
       new_arr << "and #{ele}"
+    elsif (array.length-2) == i
+      new_arr << "#{ele} "  
     else
       new_arr << "#{ele}, "
     end
@@ -15,3 +17,5 @@ def oxford_comma(array)
   
   new_arr.join
 end
+
+['a', 'b', 'c', 'd']  -- > "a, b, c and d"
