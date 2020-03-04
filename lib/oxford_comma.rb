@@ -11,7 +11,7 @@ def oxford_comma(array)
     elsif (array.length-2) == i
       new_arr << "#{ele} "
     else
-      new_arr << "#{ele},"
+      new_arr << "#{ele}, "
     end
   end
   
